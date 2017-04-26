@@ -40,6 +40,18 @@ public class Plane extends Mashine {
         return numberOfPilots;
     }
 
+    public String checkPassengers(int numberOfPassengers,int numberOfPilots)
+    {
+        if(numberOfPassengers+numberOfPilots>MAX_NUMBER_OF_PASSENGERS_IN_PLANE)
+        {
+           return "Кількість людей на літаку перевищує норму,політ відкладено";
+        }
+        else
+        {
+           return "Кількість людей на літаку не перевищує норму,літак готовий до польоту";
+        }
+    }
+
     @Override
     public String toString() {
         return  "          Інформація про літак         "+"\n"+
@@ -48,6 +60,8 @@ public class Plane extends Mashine {
                 "загальна вага літака : " + getMass() + "\n"+
                 "кількість пасажирів : " + getNumberOfPassengers() +"\n"+
                 "кількість коліс : " + getNumberOfWheels() +"\n"+
-                "кількість пілотів :" + getNumberOfPilots() ;
+                "кількість пілотів :" + getNumberOfPilots() +"\n"+
+                checkPassengers(getNumberOfPassengers(),getNumberOfPilots());
+
     }
 }

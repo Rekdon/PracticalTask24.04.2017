@@ -38,6 +38,7 @@ public class Airlaner extends Plane {
                 "кількість стьюардес : " + getNumberOfStewardess() +"\n"+
                 "мінімальна швидкість : " + getMinSpeed(getSpeed(),getNumberOfPassengers()) + "\n"+
                 "максимальна швидкість : " + (getSpeed()-70*0.5) +"\n"+
-                "максимальна вага : " + getMaxMass(getMass());
+                "максимальна вага : " + getMaxMass(getMass())+"\n"+
+                 checkPassengers(getNumberOfPassengers(),getNumberOfPilots());
     }
 }

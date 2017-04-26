@@ -50,6 +50,7 @@ public class TransportAirplane extends Plane {
                 "мінімальна швидкість : " + getMinSpeed(getSpeed(),getNumberOfPassengers()) + "\n"+
                 "максимальна швидкість : " + (getSpeed()-70*0.5) + "\n"+
                 "Обробляється інформація чи літак може злетіти : "+"\n"+"***********************"+"\n"+
+                checkPassengers(getNumberOfPassengers(),getNumberOfPilots())+"\n"+
                 getMaxMass(getMass());
 
 
